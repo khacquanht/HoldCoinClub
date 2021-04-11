@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(246, 247, 248);
+}
+div {
+  display: block;
+}
+p {
+  margin: 0 !important;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+}
+.mag-left10 {
+  margin-left: 10px;
+}
+.mag-right10 {
+  margin-right: 10px;
+}
+.hold-coin .menu-left {
+  height: 100%;
+  background-color: #006fef;
+  padding: 15px;
+}
+.hold-coin .menu-left .logo {
+  height: auto;
+  margin-bottom: 20px;
+}
+.hold-coin .menu-left .logo img {
+  width: 90%;
+  margin: 50px 0 50px 0;
+}
+.hold-coin .menu-left .angle-left {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.hold-coin .menu-left .menu-main {
+  height: 100%;
+}
+.hold-coin .menu-left .menu-main .menu-main__nav ul {
+  height: 100%;
+}
+.hold-coin .menu-left .menu-main .menu-main__nav li {
+  color: #fff;
+  height: 100%;
+}
+.hold-coin .menu-left .menu-main .menu-main__nav li > a {
+  height: 100%;
+  padding: 15px 30px;
+  color: #fff;
+  display: block;
+}
+.hold-coin .menu-left .menu-main .menu-main__nav li > a:hover {
+  background-color: #0c128a;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hold-coin .menu-left .menu-main .menu-main__nav li > a > i {
+  margin-right: 20px;
+}
+.hold-coin .header-content .header {
+  width: 100%;
+  height: 150px;
+}
+.hold-coin .header-content .header .header-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.hold-coin .header-content .header .header-top .search {
+  width: 100%;
+  position: relative;
+}
+.hold-coin .header-content .header .header-top .search input {
+  border-radius: 10px;
+  border: 1px solid;
+  background-color: #f1f4f9;
+  padding: 10px;
+  font-size: 14px;
+  width: 75%;
+}
+.hold-coin .header-content .header .header-top .search button {
+  position: absolute;
+  top: 12px;
+  right: 26%;
+  opacity: 0.6;
+  font-size: 15px;
+  border: none;
+}
+.hold-coin .header-content .header .header-top .header-top__right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hold-coin .header-content .header .header-top .header-top__right .language {
+  width: auto;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.hold-coin .header-content .header .header-top .header-top__right .wallet {
+  width: auto;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #006fef;
+  color: #fff;
+}
+.hold-coin
+  .header-content
+  .header
+  .header-top
+  .header-top__right
+  .notification {
+  width: auto;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.hold-coin .header-content .header .header-top .header-top__right .account {
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.hold-coin .header-content .header .header-top .header-top__right .account .angle-down {
+  margin-left: 10px;
+  color: #000;
+}
+.hold-coin .header-content .header .header-top .header-top__right img {
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 23px;
+}
+.hold-coin .header-content .header .header-top .header-top__right i {
+  margin-right: 10px;
+}
+.hold-coin .header-content .header .header-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.hold-coin .header-content .header .header-bottom a, 
+.hold-coin .header-content .header .header-bottom .header-bottom__text strong {
+  color: #000;
+}
+.hold-coin .header-content .header .header-bottom .header-bottom__text {
+  color: #6f7283;
+  font-size: 15px;
+}
+.hold-coin .header-content .header .header-bottom .header-bottom__text span {
+  color: #006fef;
+  font-size: 15px;
+}
+.hold-coin .header-content .content .content-main {
+  background-color: brown;
+  height: 750px;
+}
+.hold-coin .header-content .content .content-right {
+  background-color: chartreuse;
+  height: 750px;
+}
