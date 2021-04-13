@@ -30,11 +30,14 @@ ul {
   margin: 0 !important;
   padding: 0;
 }
-.mag-left10 {
-  margin-left: 10px;
+label {
+  font-size: 14px;
 }
-.mag-right10 {
-  margin-right: 10px;
+.mag-left12 {
+  margin-left: 12px;
+}
+.mag-right12 {
+  margin-right: 12px;
 }
 .hold-coin .menu-left {
   height: 100%;
@@ -95,7 +98,7 @@ ul {
 }
 .hold-coin .header-content .header .header-top .search input {
   border-radius: 10px;
-  border: 1px solid;
+  border: none;
   background-color: #f1f4f9;
   padding: 10px;
   font-size: 14px;
@@ -182,9 +185,71 @@ ul {
   color: #006fef;
   font-size: 15px;
 }
+.hold-coin .header-content .content .row {
+  background-color: #f1f4f9;
+}
 .hold-coin .header-content .content .content-main {
-  background-color: brown;
-  height: 750px;
+  height: 100%;
+}
+.hold-coin .header-content .content .content-main .title-form {
+  padding: 20px 0;
+  color: #000;
+  font-weight: bold;
+}
+.hold-coin .header-content .content .content-main .form-create_new {
+  background-color: #fff;
+  padding: 15px;
+}
+.hold-coin .header-content .content .content-main .form-create_new .add-photo {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c6c7cf;
+
+}
+.hold-coin .header-content .content .content-main .form-create_new .add-photo button {
+  color: #006fef;
+  border-color: #006fef;
+  width: 49%;
+  text-transform: uppercase;
+  border-radius: 5px;
+  height: 45px;
+}
+.hold-coin .header-content .content .content-main .form-create_new .add-photo button > span {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.hold-coin .header-content .content .content-main .form-create_new .add-photo input {
+  padding: 10px;
+  font-size: 14px;
+  width: 49%;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f4f9;
+}
+.hold-coin .header-content .content .content-main .form-create_new .form-content {
+  margin-top: 30px;
+}
+.hold-coin .header-content .content .content-main .form-create_new .form-content .row {
+  background-color: #fff;
+}
+.hold-coin .header-content .content .content-main .form-create_new .form-content .currency-pair label {
+  font-size: 14px;
+}
+.hold-coin .header-content .content .content-main .form-create_new .form-content .currency-pair select{
+  display: block;
+  width: 100%;
+  background-color: #f1f4f9;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.hold-coin .header-content .content .content-main .form-create_new .form-content .choose .idea-type {
+  margin-top: 20px;
+}
+.hold-coin .header-content .content .content-main .form-create_new .form-content .choose .idea-type label {
 }
 .hold-coin .header-content .content .content-right {
   background-color: chartreuse;
