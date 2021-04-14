@@ -98,41 +98,101 @@
                                             <div class="row">
                                                 <div class="col-6">
                                                     <div class="currency-pair">
-                                                        <label for="currencyPair">Currency pair</label>
+                                                        <label for="currencyPair">Currency pair <span
+                                                                class="cl-red">*</span></label>
                                                         <select name="currencyPair" id="currencyPair">
                                                             <option value="select">Select</option>
                                                         </select>
                                                     </div>
                                                     <div class="choose">
                                                         <div class="idea-type">
-                                                            <label for="">idea Types</label><br>
+                                                            <label for="">idea Types <span
+                                                                    class="cl-red">*</span></label><br>
                                                             <form>
                                                                 <input type="checkbox" id="spot">
                                                                 <label for="spot">Spot</label><br>
-                                                                <input type="checkbox" id="spot">
-                                                                <label for="spot">Margin</label><br>
+                                                                <input type="checkbox" id="margin">
+                                                                <label for="margin">Margin</label><br>
                                                                 <input type="checkbox" id="future">
                                                                 <label for="future">Future</label><br>
                                                             </form>
-                                                            <!-- <label for="">idea Types</label><br>
-                                                            <form>
-                                                                <input type="radio" id="spot" name="idea-type"
-                                                                    value="spot">
-                                                                <label for="spot">Spot</label><br>
-                                                                <input type="radio" id="spot" name="idea-type"
-                                                                    value="margin">
-                                                                <label for="spot">Margin</label><br>
-                                                                <input type="radio" id="future" name="idea-type"
-                                                                    value="future">
-                                                                <label for="future">Future</label><br>
-                                                            </form> -->
                                                         </div>
+                                                        <div class="trend">
+                                                            <label for="trend">Trend</label><br>
+                                                            <form>
+                                                                <input type="radio" id="short_position" name="trend"
+                                                                    value="short_position">
+                                                                <label for="short_position">Short Position</label><br>
+                                                                <input type="radio" id="long_position" name="trend"
+                                                                    value="long_position">
+                                                                <label for="long_position">Long Position</label><br>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="title">
+                                                        <label for="title">Title <span class="cl-red">*</span></label>
+                                                        <input type="text" placeholder="Enter Title" name="title">
+                                                    </div>
+                                                    <div class="description">
+                                                        <label for="description">Description</label>
+                                                        <input type="text" placeholder="Enter Description"
+                                                            name="description">
+                                                    </div>
+                                                    <div class="type">
+                                                        <label for="type">Trend <span
+                                                                class="cl-red">*</span></label><br>
+                                                        <form>
+                                                            <input type="radio" id="type" name="type" value="type">
+                                                            <label for="type">Free</label>
+                                                            <input type="radio" id="vip" name="type" value="vip">
+                                                            <label for="vip">VIP</label>
+                                                        </form>
+                                                    </div>
+                                                    <div class="duration">
+                                                        <label for="duration">idea Types <span
+                                                                class="cl-red">*</span></label><br>
+                                                        <form>
+                                                            <input type="checkbox" id="short_term">
+                                                            <label for="short_term">Short term</label>
+                                                            <input type="checkbox" id="mid_term">
+                                                            <label for="mid_term">Mid term</label>
+                                                            <input type="checkbox" id="long_term">
+                                                            <label for="long_term">Long term</label>
+                                                        </form>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-
+                                                    <div class="entry-zone">
+                                                        <label for="entry_zone">Entry Zone <span
+                                                                class="cl-red">*</span></label>
+                                                        <div class="point">
+                                                            <input type="text" placeholder="From point"
+                                                                name="entry_zone">
+                                                            <input type="text" placeholder="To point" name="entry_zone">
+                                                            <i class="fa fa-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="target-zone">
+                                                        <label for="target_zone">Target Zone <span
+                                                                class="cl-red">*</span></label>
+                                                        <div class="point">
+                                                            <input type="text" placeholder="Enter point"
+                                                                name="target_zone">
+                                                            <i class="fa fa-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="stop-lost">
+                                                        <label for="stop_lost">Stop lost <span
+                                                                class="cl-red">*</span></label>
+                                                        <input type="text" placeholder="Enter point" name="stop_lost">
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="submit">
+                                            <button class="discard">DISCARD</button>
+                                            <button class="draft">DRAFT</button>
+                                            <button class="publish">PUBLISH</button>
                                         </div>
                                     </form>
                                 </div>
