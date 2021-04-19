@@ -44,10 +44,38 @@ input {
   border: none;
   padding: 10px;
 }
+.hold-coin {
+  position: relative;
+}
+.hold-coin .nav-input {
+  display: none;
+}
+.open-menu {
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 9%;
+  color: #fff;
+  background-color: #006fef;
+  z-index: 99;
+}
+.nav-input:checked ~ .menu-left {
+  transform: translateX(0%);
+  opacity: 1;
+}
 .hold-coin .menu-left {
-  height: 100%;
+  position: fixed;
+  width: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
   background-color: #006fef;
   padding: 15px;
+  z-index: 99;
+  max-width: 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform linear 0.2s, opacity linear 0.2s;
 }
 .hold-coin .menu-left .logo {
   height: auto;
@@ -60,9 +88,14 @@ input {
   margin-right: auto;
 }
 .hold-coin .menu-left .angle-left {
+  padding: 5px;
   color: #fcfcfc;
   display: flex;
   justify-content: flex-end;
+}
+.hold-coin .menu-left .logo input {
+  display: none;
+  
 }
 .hold-coin .menu-left .menu-main .menu-main__nav ul {
   height: 100%;
@@ -89,7 +122,8 @@ input {
 .hold-coin .header-content .header {
   width: 100%;
   height: 150px;
-}
+  padding: 15px 15px;
+} 
 .hold-coin .header-content .header .header-top {
   width: 100%;
   height: 50%;
@@ -117,7 +151,7 @@ input {
   border: none;
 }
 .hold-coin .header-content .header .header-top .header-top__right {
-  height: 100%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -189,15 +223,20 @@ input {
   color: #006fef;
   font-size: 15px;
 }
+.hold-coin .header-content .content {
+  width: 100%;
+  display: flex;
+}
 .hold-coin .header-content .content .row {
   background-color: #f1f4f9;
 }
 .hold-coin .header-content .content .content-main {
+  width: 100%;
   height: 100%;
   margin-bottom: 300px;
 }
 .hold-coin .header-content .content .content-main .title-form {
-  padding: 20px 0;
+  padding: 20px 15px;
   color: #000;
   font-weight: bold;
 }
@@ -220,7 +259,7 @@ input {
   width: 49%;
   text-transform: uppercase;
   border-radius: 5px;
-  height: 45px;
+  height: auto;
 }
 .hold-coin .header-content .content .content-main .form-create_new .add-photo button > span {
   font-size: 16px;
@@ -322,6 +361,7 @@ input {
   border-radius: 5px;
 }
 .hold-coin .header-content .content .content-right {
+  width: 25%;
   background-color: #fcfcfc  ;
   height: 100%;
   padding: 10px;
@@ -364,4 +404,41 @@ input {
   margin-top: 5px !important;
   font-weight: 100;
   opacity: 0.6;
+}
+
+/* responsive mobile */
+
+@media only screen and (max-width: 28.125em) {
+  .open-menu {
+    top: 11%;
+  }
+  .hold-coin .header-content .content .content-main {
+    margin-bottom: 0;
+  }
+  .hold-coin .header-content .header .header-top .header-top__right .account {
+    font-size: 10px;
+  }
+  .search {
+    width: 30%;
+  }
+  .content-right {
+    display: none;
+  }
+}
+
+/* responsive tablet */
+
+@media only screen and (min-width: 28.125em) and (max-width: 48em) {
+  .open-menu {
+    top: 10%;
+  }
+  .search {
+    width: 100%;
+  }
+  .hold-coin .header-content .header .header-top .header-top__right {
+    width: 40%;
+  }
+  .content-right {
+    display: none;
+  }
 }

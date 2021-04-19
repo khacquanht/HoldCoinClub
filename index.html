@@ -13,278 +13,258 @@
 
 <body>
     <div class="hold-coin">
-        <div class="row">
-            <div class="col-2">
-                <div class="menu-left">
-                    <div class="logo">
-                        <a href="#"><img src="assets/images/2e412ccd7002825cdb13.jpg" alt=""></a>
-                        <a href="#" class="angle-left"><i class="fa fa-angle-left"></i></a>
+        <label for="menu-input" class="open-menu"><i class="fa fa-angle-right"></i></label>
+        <input type="checkbox" class="nav-input" id="menu-input">
+        <div class="menu-left">
+            <div class="logo">
+                <a href="#"><img src="assets/images/2e412ccd7002825cdb13.jpg" alt=""></a>
+                <label class="angle-left" for="menu-input"><i class="fa fa-angle-left"></i></label>
+            </div>
+            <div class="menu-main">
+                <ul class="menu-main__nav">
+                    <li><a href="#">
+                            <i class="fa fa-border-all"></i>Dashboard</a></li>
+                    <li><a href="#">
+                            <i class="fab fa-pagelines"></i>Trade Ideas</a></li>
+                    <li><a href="#">
+                            <i class="fa fa-border-all"></i>Market View</a></li>
+                    <li><a href="#">
+                            <i class="fa fa-border-all"></i>Feed</a></li>
+                    <li><a href="#">
+                            <i class="fa fa-border-all"></i>News</a></li>
+                    <li><a href="#">
+                            <i class="fa fa-border-all"></i>Coin</a></li>
+                    <li><a href="#">
+                            <i class="fa fa-border-all"></i>Ranking</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="header">
+                <div class="header-top">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
-                    <div class="menu-main">
-                        <ul class="menu-main__nav">
-                            <li><a href="#">
-                                    <i class="fa fa-border-all"></i>Dashboard</a></li>
-                            <li><a href="#">
-                                    <i class="fab fa-pagelines"></i>Trade Ideas</a></li>
-                            <li><a href="#">
-                                    <i class="fa fa-border-all"></i>Market View</a></li>
-                            <li><a href="#">
-                                    <i class="fa fa-border-all"></i>Feed</a></li>
-                            <li><a href="#">
-                                    <i class="fa fa-border-all"></i>News</a></li>
-                            <li><a href="#">
-                                    <i class="fa fa-border-all"></i>Coin</a></li>
-                            <li><a href="#">
-                                    <i class="fa fa-border-all"></i>Ranking</a></li>
-                        </ul>
+                    <div class="header-top__right">
+                        <button class="language">
+                            <img src="assets/images/2e412ccd7002825cdb12.jpg" alt="">EN
+                        </button>
+                        <button class="wallet">
+                            <img src="assets/images/2e412ccd7002825cdb11.jpg" alt="">Wallet
+                        </button>
+                        <button class="notification">
+                            <i class="fa fa-bell"></i>15
+                        </button>
+                        <div class="account">
+                            <a href="#"><img src="assets/images/2e412ccd7002825cdb10.jpg" alt=""></a>Michelle
+                            Rodriguez
+                            <a href="#" class="angle-down"><i class="fa fa-angle-down"></i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="header-bottom">
+                    <a href="#" style="margin-right: 30px;"><i class="fa fa-angle-down"></i></a>
+                    <p class="header-bottom__text">Earnings <strong>USDT</strong> <span>0.00</span></p>
+                    <p class="header-bottom__text" style="margin-left: 10px !important;">Blance
+                        <strong>USDT</strong> <span>0.00</span>
+                    </p>
+                </div>
             </div>
-            <div class="col-10">
-                <div class="header-content">
-                    <div class="header">
-                        <div class="header-top">
-                            <div class="row" style="width: 100%;">
-                                <div class="col-8">
-                                    <div class="search">
-                                        <input type="text" placeholder="Search">
-                                        <button>
-                                            <i class="fa fa-search"></i>
-                                        </button>
+            <div class="content">
+                <div class="content-main">
+                    <div class="title-form">
+                        <i class="fa fa-arrow-left mag-right12"></i>
+                        Create new trade idea
+                    </div>
+
+                    <div class="form-create_new">
+                        <div class="add-photo">
+                            <button>+ Add photos <span>(Maximum 5)</span></button>
+                            <input type="text" placeholder="Paste Youtube Link (optional)">
+                        </div>
+                        <div class="form-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="currency-pair">
+                                        <label for="currencyPair">Currency pair <span class="cl-red">*</span></label>
+                                        <select name="currencyPair" id="currencyPair">
+                                            <option value="select">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="choose">
+                                        <div class="idea-type">
+                                            <label for="">idea Types <span class="cl-red">*</span></label><br>
+                                            <form>
+                                                <input type="checkbox" id="spot">
+                                                <label for="spot">Spot</label><br>
+                                                <input type="checkbox" id="margin">
+                                                <label for="margin">Margin</label><br>
+                                                <input type="checkbox" id="future">
+                                                <label for="future">Future</label><br>
+                                            </form>
+                                        </div>
+                                        <div class="trend">
+                                            <label for="trend">Trend</label><br>
+                                            <form>
+                                                <input type="radio" id="short_position" name="trend"
+                                                    value="short_position">
+                                                <label for="short_position">Short Position</label><br>
+                                                <input type="radio" id="long_position" name="trend"
+                                                    value="long_position">
+                                                <label for="long_position">Long Position</label><br>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <label for="title">Title <span class="cl-red">*</span></label>
+                                        <input type="text" placeholder="Enter Title" name="title">
+                                    </div>
+                                    <div class="description">
+                                        <label for="description">Description</label>
+                                        <input type="text" placeholder="Enter Description" name="description">
+                                    </div>
+                                    <div class="type">
+                                        <label for="type">Trend <span class="cl-red">*</span></label><br>
+                                        <form>
+                                            <input type="radio" id="type" name="type" value="type">
+                                            <label for="type">Free</label>
+                                            <input type="radio" id="vip" name="type" value="vip">
+                                            <label for="vip">VIP</label>
+                                        </form>
+                                    </div>
+                                    <div class="duration">
+                                        <label for="duration">idea Types <span class="cl-red">*</span></label><br>
+                                        <form>
+                                            <input type="checkbox" id="short_term">
+                                            <label for="short_term">Short term</label>
+                                            <input type="checkbox" id="mid_term">
+                                            <label for="mid_term">Mid term</label>
+                                            <input type="checkbox" id="long_term">
+                                            <label for="long_term">Long term</label>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="header-top__right">
-                                        <button class="language">
-                                            <img src="assets/images/2e412ccd7002825cdb12.jpg" alt="">EN
-                                        </button>
-                                        <button class="wallet">
-                                            <img src="assets/images/2e412ccd7002825cdb11.jpg" alt="">Wallet
-                                        </button>
-                                        <button class="notification">
-                                            <i class="fa fa-bell"></i>15
-                                        </button>
-                                        <div class="account">
-                                            <a href="#"><img src="assets/images/2e412ccd7002825cdb10.jpg"
-                                                    alt=""></a>Michelle Rodriguez
-                                            <a href="#" class="angle-down"><i class="fa fa-angle-down"></i></a>
+                                <div class="col-md-6">
+                                    <div class="entry-zone">
+                                        <label for="entry_zone">Entry Zone <span class="cl-red">*</span></label>
+                                        <div class="point">
+                                            <input type="text" placeholder="From point" name="entry_zone">
+                                            <input type="text" placeholder="To point" name="entry_zone">
+                                            <i class="fa fa-plus"></i>
                                         </div>
+                                    </div>
+                                    <div class="target-zone">
+                                        <label for="target_zone">Target Zone <span class="cl-red">*</span></label>
+                                        <div class="point">
+                                            <input type="text" placeholder="Enter point" name="target_zone">
+                                            <i class="fa fa-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="stop-lost">
+                                        <label for="stop_lost">Stop lost <span class="cl-red">*</span></label>
+                                        <input type="text" placeholder="Enter point" name="stop_lost">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="header-bottom">
-                            <a href="#" style="margin-right: 30px;"><i class="fa fa-angle-down"></i></a>
-                            <p class="header-bottom__text">Earnings <strong>USDT</strong> <span>0.00</span></p>
-                            <p class="header-bottom__text" style="margin-left: 10px !important;">Blance
-                                <strong>USDT</strong> <span>0.00</span>
-                            </p>
+                        <div class="submit">
+                            <button class="discard">DISCARD</button>
+                            <button class="draft">DRAFT</button>
+                            <button class="publish">PUBLISH</button>
                         </div>
                     </div>
-                    <div class="content">
+                </div>
+                <div class="content-right">
+                    <button class="angle-right"><i class="fa fa-angle-right"></i></button>
+                    <div class="menu-right">
+                        <a href="#" style="border-bottom: 5px solid #006fef;"><i class="far fa-comment"></i></a>
+                        <a href="#"><i class="fa fa-newspaper"></i></a>
+                        <a href="#"><i class="fa fa-calendar-check"></i></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search" style="width: 100%;">
+                        <button style="right: 0%;">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="comment">
                         <div class="row">
-                            <div class="col-9">
-                                <div class="content-main">
-                                    <div class="title-form">
-                                        <i class="fa fa-arrow-left mag-right12"></i>
-                                        Create new trade idea
-                                    </div>
-                                    <div class="form-create_new">
-                                        <div class="add-photo">
-                                            <button>+ Add photos <span>(Maximum 5)</span></button>
-                                            <input type="text" placeholder="Paste Youtube Link (optional)">
-                                        </div>
-                                        <div class="form-content">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="currency-pair">
-                                                        <label for="currencyPair">Currency pair <span
-                                                                class="cl-red">*</span></label>
-                                                        <select name="currencyPair" id="currencyPair">
-                                                            <option value="select">Select</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="choose">
-                                                        <div class="idea-type">
-                                                            <label for="">idea Types <span
-                                                                    class="cl-red">*</span></label><br>
-                                                            <form>
-                                                                <input type="checkbox" id="spot">
-                                                                <label for="spot">Spot</label><br>
-                                                                <input type="checkbox" id="margin">
-                                                                <label for="margin">Margin</label><br>
-                                                                <input type="checkbox" id="future">
-                                                                <label for="future">Future</label><br>
-                                                            </form>
-                                                        </div>
-                                                        <div class="trend">
-                                                            <label for="trend">Trend</label><br>
-                                                            <form>
-                                                                <input type="radio" id="short_position" name="trend"
-                                                                    value="short_position">
-                                                                <label for="short_position">Short Position</label><br>
-                                                                <input type="radio" id="long_position" name="trend"
-                                                                    value="long_position">
-                                                                <label for="long_position">Long Position</label><br>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <div class="title">
-                                                        <label for="title">Title <span class="cl-red">*</span></label>
-                                                        <input type="text" placeholder="Enter Title" name="title">
-                                                    </div>
-                                                    <div class="description">
-                                                        <label for="description">Description</label>
-                                                        <input type="text" placeholder="Enter Description"
-                                                            name="description">
-                                                    </div>
-                                                    <div class="type">
-                                                        <label for="type">Trend <span
-                                                                class="cl-red">*</span></label><br>
-                                                        <form>
-                                                            <input type="radio" id="type" name="type" value="type">
-                                                            <label for="type">Free</label>
-                                                            <input type="radio" id="vip" name="type" value="vip">
-                                                            <label for="vip">VIP</label>
-                                                        </form>
-                                                    </div>
-                                                    <div class="duration">
-                                                        <label for="duration">idea Types <span
-                                                                class="cl-red">*</span></label><br>
-                                                        <form>
-                                                            <input type="checkbox" id="short_term">
-                                                            <label for="short_term">Short term</label>
-                                                            <input type="checkbox" id="mid_term">
-                                                            <label for="mid_term">Mid term</label>
-                                                            <input type="checkbox" id="long_term">
-                                                            <label for="long_term">Long term</label>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="entry-zone">
-                                                        <label for="entry_zone">Entry Zone <span
-                                                                class="cl-red">*</span></label>
-                                                        <div class="point">
-                                                            <input type="text" placeholder="From point"
-                                                                name="entry_zone">
-                                                            <input type="text" placeholder="To point" name="entry_zone">
-                                                            <i class="fa fa-plus"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="target-zone">
-                                                        <label for="target_zone">Target Zone <span
-                                                                class="cl-red">*</span></label>
-                                                        <div class="point">
-                                                            <input type="text" placeholder="Enter point"
-                                                                name="target_zone">
-                                                            <i class="fa fa-plus"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stop-lost">
-                                                        <label for="stop_lost">Stop lost <span
-                                                                class="cl-red">*</span></label>
-                                                        <input type="text" placeholder="Enter point" name="stop_lost">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="submit">
-                                            <button class="discard">DISCARD</button>
-                                            <button class="draft">DRAFT</button>
-                                            <button class="publish">PUBLISH</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
                             </div>
-                            <div class="col-3">
-                                <div class="content-right">
-                                    <button class="angle-right"><i class="fa fa-angle-right"></i></button>
-                                    <div class="menu-right">
-                                        <a href="#" style="border-bottom: 5px solid #006fef;"><i
-                                                class="far fa-comment"></i></a>
-                                        <a href="#"><i class="fa fa-newspaper"></i></a>
-                                        <a href="#"><i class="fa fa-calendar-check"></i></a>
-                                    </div>
-                                    <div class="search">
-                                        <input type="text" placeholder="Search" style="width: 100%;">
-                                        <button style="right: 0%;">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </div>
-                                    <div class="comment">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <p>Johnny Marsh<span>Sent you a message</span></p>
-                                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <p class="content-message">3 hour ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <p>Johnny Marsh<span>Sent you a message</span></p>
-                                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <p class="content-message">3 hour ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <p>Johnny Marsh<span>Sent you a message</span></p>
-                                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <p class="content-message">3 hour ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <p>Johnny Marsh<span>Sent you a message</span></p>
-                                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <p class="content-message">3 hour ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <p>Johnny Marsh<span>Sent you a message</span></p>
-                                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <p class="content-message">3 hour ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <p>Johnny Marsh<span>Sent you a message</span></p>
-                                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <p class="content-message">3 hour ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-9">
+                                <p>Johnny Marsh<span>Sent you a message</span></p>
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <p class="content-message">3 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <p>Johnny Marsh<span>Sent you a message</span></p>
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <p class="content-message">3 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <p>Johnny Marsh<span>Sent you a message</span></p>
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <p class="content-message">3 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <p>Johnny Marsh<span>Sent you a message</span></p>
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <p class="content-message">3 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <p>Johnny Marsh<span>Sent you a message</span></p>
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <p class="content-message">3 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="assets/images/2e412ccd7002825cdb14.jpg" width="90px" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <p>Johnny Marsh<span>Sent you a message</span></p>
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <p class="content-message">3 hour ago</p>
                             </div>
                         </div>
                     </div>
